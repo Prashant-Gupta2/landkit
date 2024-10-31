@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        header{
+            display: flex;
+            justify-content: space-around;
+        }
+        .brand-title span{
+            font-weight: bold;
+            font-size: 30px;
+            background-color: azure;
+            color: blue;
+            font-family: Arial;
+        }
+        .navbar span{
+            padding-right: 12px;
+            font-family: 'Segoe UI';
+            font-size: 20px;
+        }
+        .btn{
+            font-weight: bold;
+            font-size: 18px;
+            text-align: center;
+            background-color: blue;
+            color: white;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .title{
+            font-size: 40px;
+            font-family: Arial;
+            line-height: 40px;
+            padding: 15px;
+            padding-left: 180px;
+            padding-top: 180px;
+            margin-top: 20px; 
+        }
+        .title2{    
+        color: blue;
+        font-size: 40px;
+        
+        }
+      .desc{
+            font-size: 20px;
+            color: gray;
+            width: 450px;
+            padding: 10px;
+            line-height: 30px;
+            margin-left: 170px;
+        }
+        .btn3{
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            text-align: center;
+            justify-content: center;
+            padding-left: 185px;
+            margin-top: 10px;
+        }
+
+        .btn2{
+            background-color: blue;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 20px;
+            color: white;
+        }
+        .btn4{
+            display: inline-block;
+            padding: 20px;
+            font-size: 18px;
+            background-color: azure;
+            margin-left: 10px;
+            border: 1px solid gray;
+            border-radius: 10px;
+            color: blue;
+        }
+        .navbar span:hover{
+            color:blueviolet;
+            cursor: pointer;
+        }
+        @media screen and (max-width:600px)
+        {
+         header{
+         display: grid;
+         grid-template-columns: 12fr;
+         }  
+         header span{
+          display: flex;  
+          padding: 5px;
+          line-height: 30px;
+        }
+        header button{
+         border: none;
+        }
+        main img{
+         width: 350px;
+        }
+        main .title{
+         display: block;
+         font-size: 30px;
+         margin-left: -75px;
+        }
+        main .desc{
+         font-size: 18px;
+         margin-left: -17px;
+        }
+        main .btn3{
+         display: grid;
+         grid-template-columns: 6fr 6fr;
+         margin-left: -160px;
+        }
+        .btn2{
+         height: 30px;
+         border: none;
+         width: 100px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="brand-title">
+          <span>Landkit.</span>
+        </div>
+        <div>
+            <nav class="navbar">
+                <span>Landings</span>
+                <span>Pages</span>
+                <span>Accounts</span>
+                <span>Documentation</span>
+            </nav>
+        </div>
+        <div>
+         <button class="btn">Buy now</button>
+        </div>
+    </header>
+    <section>
+        <main>
+            <img src="/public/images/landkit-banner.png" align="right" alt="#">
+            <div>
+                <div class="title">
+                    <div> Welcome to <span class="title2">Landkit.</span></div>
+                    <span> Develop anything. </span>
+                </div>
+                <div class="desc">
+                    <span> Build a beautiful, modern website with flexible.<br></span>
+                    <span>Bootstrap components built from scratch.</span>
+                </div>
+                  <div class="btn3">
+                    <div class="btn2">View all pages <span class="bi bi-arrow-right"></span></div>
+                    <div class="btn4">Documentation</div>
+                  </div> 
+            </div>
+        </main>
+    </section>
+</body>
+</html>
